@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane fx:id="listar_categorias_root" maxHeight="1.7976931348623157E308" maxWidth="700.0" minHeight="-Infinity" minWidth="-Infinity" prefWidth="700.0" styleClass="root-categorias-listar" stylesheets="@../../stylesheets/categorias.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sicof.controller.FXML_CategoriasListar">
+   <children>
+      <GridPane alignment="TOP_CENTER" layoutX="10.0" layoutY="10.0" maxHeight="455.0" maxWidth="680.0" prefHeight="455.0" prefWidth="680.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="45.0" minHeight="45.0" prefHeight="45.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="432.79999389648435" minHeight="10.0" prefHeight="407.1999877929687" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <HBox alignment="CENTER_LEFT" GridPane.hgrow="ALWAYS">
+               <children>
+                  <HBox HBox.hgrow="ALWAYS">
+                     <children>
+                        <TextField fx:id="busca" maxWidth="250.0" onKeyTyped="#onSearch" prefHeight="30.0" prefWidth="250.0" promptText="Pesquisar" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="TOP_RIGHT" spacing="10.0" stylesheets="@../../stylesheets/filmes.css" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Button fx:id="button_edit" alignment="CENTER" contentDisplay="CENTER" disable="true" mnemonicParsing="false" onMouseClicked="#clickEdit" prefHeight="30.0" prefWidth="85.0" styleClass="action-filmes-button" text="Editar">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Button fx:id="button_delete" alignment="CENTER" contentDisplay="CENTER" disable="true" mnemonicParsing="false" onMouseClicked="#clickDelete" prefHeight="30.0" prefWidth="85.0" styleClass="action-filmes-button" stylesheets="@../../stylesheets/filmes.css" text="Excluir">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <TableView fx:id="table" editable="true" maxHeight="385.0" prefHeight="385.0" prefWidth="680.0" styleClass="table-categorias" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
+               <columns>
+                  <TableColumn fx:id="table_id" maxWidth="45.0" minWidth="45.0" prefWidth="45.0" text="ID" />
+                  <TableColumn fx:id="table_title" maxWidth="1.7976931348623157E308" prefWidth="630.3999404907227" text="Categoria" />
+               </columns>
+            </TableView>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

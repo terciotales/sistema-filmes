@@ -1,0 +1,57 @@
+@import "./top_menu.css";
+@import "./left_menu.css";
+@import "./atores.css";
+@import "./filmes.css";
+
+.root {
+    -fx-background-color: #262626;
+    -fx-base: #262626;
+    -fx-control-inner-background: derive(-fx-base, 35%);
+    -fx-control-inner-background-alt: -fx-control-inner-background;
+    -fx-font-family: Arial;
+    -fx-text-fill: #F9F9F9;
+}
+
+.nav-menu-content {
+    -fx-background-color: transparent;
+    -fx-text-fill: #F9F9F9!important;
+    -fx-border-width: 0 0 2px 0;
+    -fx-border-color: transparent;
+    -fx-font-weight: bold;
+}
+
+.nav-menu-content:hover, .nav-menu-content.active {
+    -fx-fill: #ED315C!important;
+    -fx-text-fill: #ED315C!important;
+    -fx-border-color: #ED315C!important;
+    -fx-cursor: hand;
+}
+
+.title {
+    -fx-font-weight: bold;
+    -fx-font-size: 20px;
+}
+
+.field-title {
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+}
+
+.action-button {
+    -fx-font-weight: bold;
+}
+
+Text {
+    -fx-fill: #F9F9F9;
+    -fx-font-weight: 600;
+    -fx-font-size: 16px;
+}
+
+TextField, TextArea, ComboBox, DatePicker, PasswordField, CheckBox, RadioButton, ToggleButton, Button, ListView, TableView, TableColumn, TitledPane, Accordion, Pagination, ProgressIndicator, ProgressBar, Slider, ScrollBar, ScrollPane, TabPane, Tab, SplitPane, Separator, MenuBar, Menu, MenuItem, ContextMenu, ColorPicker, ChoiceBox, Spinner, Hyperlink, Label, Tooltip, TreeView, TreeTableView, TreeItem, AnchorPane, BorderPane, GridPane {
+    -fx-text-fill: #F9F9F9;
+    -fx-prompt-text-fill: #F9F9F9!important;
+}
+
+.jfx-text-field {
+    -fx-prompt-text-fill: #989898;
+}

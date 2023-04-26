@@ -1,0 +1,33 @@
+.left-menu {
+    -fx-background-color: #2C2C2C;
+}
+
+.menu-title {
+    -fx-background-color: #ED315C;
+    -fx-font-size: 16px;
+}
+
+.nav-menu {
+    -fx-background-color: transparent;
+    -fx-border-radius: 0;
+}
+
+.nav-menu:hover {
+    -fx-background-color: #333333;
+    -fx-cursor: hand;
+}
+
+.nav-menu.active {
+    -fx-background-color: #ED315C;
+}
+
+.close-button {
+    -fx-background-color: #262626;
+    -fx-text-fill: #F9F9F9;
+    -fx-font-weight: bold;
+    -fx-border-radius: 3px;
+}
+
+.close-button:hover {
+    -fx-background-color: #ED315C;
+}

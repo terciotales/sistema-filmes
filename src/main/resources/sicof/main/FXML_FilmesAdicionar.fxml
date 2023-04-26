@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="700.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="700.0" styleClass="root-filmes-adicionar" stylesheets="@../../stylesheets/filmes.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sicof.controller.FXML_FilmesAdicionar">
+   <children>
+      <Pane maxHeight="1.7976931348623157E308" prefWidth="200.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <Text layoutX="15.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title" text="Adicionar filme" />
+            <Text layoutX="15.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="field-title" text="Título do filme" />
+            <TextField fx:id="title" layoutX="15.0" layoutY="89.0" prefHeight="30.0" prefWidth="650.0" promptText="Título" />
+            <Text layoutX="15.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="field-title" text="Categoria" />
+            <ComboBox fx:id="category" layoutX="15.0" layoutY="172.0" prefHeight="30.0" prefWidth="310.0" promptText="Selecione a categoria" />
+            <Text layoutX="356.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="field-title" text="Data de lançamento" />
+            <DatePicker fx:id="release_date" editable="false" layoutX="355.0" layoutY="172.0" prefHeight="30.0" prefWidth="310.0" promptText="Selecione a data" />
+            <Text layoutX="15.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="field-title" text="Atores" />
+            <ComboBox fx:id="actor" layoutX="15.0" layoutY="260.0" onAction="#onComboAction" prefHeight="30.0" prefWidth="310.0" promptText="Selecione o ator" />
+            <ListView fx:id="list_actors" layoutX="355.0" layoutY="260.0" prefHeight="97.0" prefWidth="310.0" />
+            <Button fx:id="remove_ator" layoutX="183.0" layoutY="332.0" mnemonicParsing="false" onMouseClicked="#removeActor" prefHeight="25.0" prefWidth="142.0" text="Remover" />
+            <Button fx:id="add_ator" layoutX="15.0" layoutY="332.0" mnemonicParsing="false" onMouseClicked="#addActor" prefHeight="25.0" prefWidth="142.0" text="Adicionar" />
+            <Button layoutX="546.0" layoutY="391.0" mnemonicParsing="false" onMouseClicked="#saveFilme" prefHeight="25.0" prefWidth="120.0" text="Adicionar" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

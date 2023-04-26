@@ -1,0 +1,109 @@
+.root-categorias {
+    -fx-background-color: #262626;
+    -fx-base: #262626;
+    -fx-control-inner-background: derive(-fx-base, 35%);
+    -fx-control-inner-background-alt: -fx-control-inner-background;
+    -fx-font-family: Arial;
+    -fx-text-fill: #F9F9F9;
+}
+
+.nav-menu-content {
+    -fx-background-color: transparent;
+    -fx-font-weight: bold;
+}
+
+.nav-menu-content:hover, .nav-menu-content.active {
+    -fx-fill: #ED315C!important;
+    -fx-cursor: hand;
+}
+
+.root-categorias-listar, .root-categorias-adicionar, .root-categorias-editar {
+    -fx-background-color: #151515;
+    -fx-fill: #ED315C!important;
+}
+
+Text {
+    -fx-fill: #F9F9F9;
+    -fx-font-weight: 600;
+    -fx-font-size: 16px;
+}
+
+.title {
+    -fx-font-weight: bold;
+    -fx-font-size: 20px;
+}
+
+.field-title {
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+}
+
+.action-button {
+    -fx-font-weight: bold;
+}
+
+.action-categorias-button {
+    -fx-background-color: #262626;
+    -fx-text-fill: #F9F9F9;
+}
+
+.action-button {
+    -fx-background-color: #262626;
+    -fx-text-fill: #F9F9F9;
+    -fx-font-weight: bold;
+    -fx-border-radius: 3px;
+}
+
+.action-categorias-button:hover {
+    -fx-background-color: #ED315C;
+}
+
+.table-categorias {
+    -fx-background-color: #262626;
+    -fx-text-fill: #F9F9F9;
+}
+
+.table-categorias .column-header,
+.table-categorias .column-header .filler,
+.table-categorias .column-header-background .filler {
+    -fx-background-color: #323232;
+    -fx-text-fill: #F9F9F9;
+    -fx-border-radius: 8px;
+    -fx-pref-height: 40px;
+}
+
+.table-categorias .column-header .label {
+    -fx-text-alignment: left;
+    -fx-alignment: CENTER_LEFT;
+    -fx-padding: 5px 0 5px 10px;
+    -fx-font-size: 12px;
+}
+
+.table-view .table-cell{
+    -fx-border-color: transparent;
+    -fx-padding: 3 0 3 10px;
+    -fx-alignment: CENTER_LEFT;
+    -fx-background-color: transparent;
+    -fx-min-height: 40px;
+}
+
+.table-row-cell {
+    -fx-background-insets: 0, 0 0 1.5 0;
+    -fx-padding: 0.0em;
+    -fx-font-size: 11px;
+    -fx-alignment: CENTER_LEFT;
+    -fx-background-color: #262626;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #412831;
+}
+
+.table-row-cell:selected .table-cell {
+    -fx-text-fill: #ED315C!important;
+    -fx-fill: #ED315C!important;
+}
+
+.table-row-cell:hover {
+    -fx-background-color: #412831;
+}
